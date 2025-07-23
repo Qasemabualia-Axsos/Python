@@ -27,7 +27,7 @@ class User:
     def __init__(self, name,email):
         self.name = name
         self.email = email
-        self.account = BankAccount(int_rate= 0.02, balance=0)
+        self.account = BankAccount(int_rate= 0.01, balance=0)
 
     def user_info(self):
         print(f"Name: {self.name}")

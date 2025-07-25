@@ -1,5 +1,5 @@
 class User:
-    def __init__(self,name,balance):
+    def __init__(self,name,balance=0):
         self.name=name
         self.balance=balance
     def make_deposit(self,amount):

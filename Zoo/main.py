@@ -23,9 +23,9 @@ class Lion(Animal):
         print(f"{self.name} the lion roars happily!")
         
 class Monkey(Animal):
-    def __init__(self, name, age=3,health=0,happines=0, mane_size="Large"):
+    def __init__(self, name, age=3,health=0,happines=0, favorite_frute="Banana"):
         super().__init__(name, age, health=80, happines=90)
-        self.mane_size=mane_size
+        self.favorite_frute=favorite_frute
     
     def feed(self):
         self.health+=5
@@ -33,9 +33,9 @@ class Monkey(Animal):
         print(f"{self.name} the lion roars happily!")
     
 class Tiger(Animal):
-    def __init__(self, name, age=2,health=0,happines=0, favorite_fruit="Meat"):
+    def __init__(self, name, age=2,health=0,happines=0, fastest="Very fast"):
         super().__init__(name, age, health=70, happines=110)
-        self.favorite_frute=favorite_fruit
+        self.fastest=fastest
     
     def feed(self):
         self.health+=5
@@ -46,19 +46,16 @@ class Zoo:
     def __init__(self, zoo_name):
         self.animals = []
         self.name = zoo_name
-    def add_lion(self, animal):
-        self.animals.append( Lion(animal) )
-    def add_tiger(self, name):
-        self.animals.append(Tiger(name) )
+    def add_animal(self, animal):
+        self.animals.append(animal) 
     def print_all_info(self):
         print("-"*30, self.name, "-"*30)
         for animal in self.animals:
             animal.display_info()
 zoo1 = Zoo("John's Zoo")
-zoo1.add_lion("Nala")
-zoo1.add_lion("Simba")
-zoo1.add_tiger("Rajah")
-zoo1.add_tiger("Shere Khan")
+zoo1.add_animal(Lion("Nala"))
+zoo1.add_animal(Tiger("sharoukhan"))
+zoo1.add_animal(Monkey("Tarazan,3"))
 zoo1.animals[0].feed()
 zoo1.animals[2].feed()
 zoo1.print_all_info()

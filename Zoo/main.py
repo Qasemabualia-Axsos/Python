@@ -26,14 +26,14 @@ class Lion(Animal):
         return self
     
 class Tiger(Animal):
-    def __init__(self, name, age=2, favorite_fruit="Banana"):
+    def __init__(self, name, age=2, favorite_fruit="Meat"):
         super().__init__(name, age, health=70, happines=110)
         self.favorite_frute=favorite_fruit
     
     def feed(self):
         self.health+=5
         self.happines+=20
-        print(f"{self.name} the Tiger jumps with joy!")
+        print(f"{self.name} the Tiger feels happy!")
         return self
 
 class Zoo:

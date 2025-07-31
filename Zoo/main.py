@@ -20,7 +20,7 @@ class Lion(Animal):
     def feed(self):
         self.health+=15
         self.happines+=5
-        print(f"{self.name} the lion roars happily!")
+        print(f"the lion size is {self.mane_size}!")
         
 class Monkey(Animal):
     def __init__(self, name, age=3,health=0,happines=0, favorite_frute="Banana"):
@@ -30,7 +30,7 @@ class Monkey(Animal):
     def feed(self):
         self.health+=5
         self.happines+=5
-        print(f"{self.name} the lion roars happily!")
+        print(f"Monkey Favorite fruite is {self.favorite_frute}!")
     
 class Tiger(Animal):
     def __init__(self, name, age=2,health=0,happines=0, fastest="Very fast"):
@@ -40,7 +40,7 @@ class Tiger(Animal):
     def feed(self):
         self.health+=5
         self.happines+=20
-        print(f"{self.name} the Tiger feels happy!")
+        print(f"the Tiger is {self.fastest}!")
 
 class Zoo:
     def __init__(self, zoo_name):
@@ -55,7 +55,8 @@ class Zoo:
 zoo1 = Zoo("John's Zoo")
 zoo1.add_animal(Lion("Nala"))
 zoo1.add_animal(Tiger("sharoukhan"))
-zoo1.add_animal(Monkey("Tarazan,3"))
+zoo1.add_animal(Monkey("Tarazan",3))
 zoo1.animals[0].feed()
+zoo1.animals[1].feed()
 zoo1.animals[2].feed()
 zoo1.print_all_info()

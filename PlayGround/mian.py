@@ -8,13 +8,11 @@ def first():
 
 @app.route("/play/<x>")
 def second(x):
-    x=int(x)
-    return render_template ("index.html",num=x,color="#9fc5f8")
+    return render_template ("index.html",num=int(x),color="#9fc5f8")
 
 @app.route("/play/<x>/<color>")
 def third(x,color):
-    x=int(x)
-    return render_template ("index.html",num=x,color=color)
+    return render_template ("index.html",num=int(x),color=color)
 
 if __name__==("__main__"):
     app.run(debug=True,port=9000)

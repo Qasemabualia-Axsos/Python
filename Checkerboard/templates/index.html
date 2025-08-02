@@ -12,10 +12,24 @@
         {%for row in range (rows)%}
         <div class="row">
             {%for col in range (cols)%}
-            <div class="box {%if (row + col)%2==0%}black{%else%}red{%endif%}"></div>
+            <div class="box" style="background-color: {{ color1 if (row + col) % 2 == 0 else color2 }}"></div>    
             {%endfor%}
         </div>
         {%endfor%}
     </div>
 </body>
 </html>
+
+<!-- if rows=2,cols=3 -->
+<!-- <div class="board">
+    <div class="row">
+        <div class="box black"></div>
+        <div class="box red"></div>
+        <div class="box black"></div>
+    </div>
+    <div class="row">
+        <div class="box red"></div>
+        <div class="box black"></div>
+        <div class="box red"></div>
+    </div>
+</div> -->

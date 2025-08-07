@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+    font-size: 35px;
+}
+table,th,td{
+    border: 1px solid black;
+    width: 1500px;
+    height: 80px;
+    margin:60px auto;
+    cursor: pointer;
+}
+th{
+    color: white;
+    background-color: rgb(72, 156, 156);
+}
+td{
+    background-color: rgb(190, 186, 186);
+}
+td:hover {
+    background-color: rgb(72, 156, 156);
+    color: white;
+}
+

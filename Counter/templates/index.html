@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+    <style>
+        body{
+            text-align: center;
+            margin-top: 60px;
+        }
+        button{
+            width: 150px;
+            height: 25px;
+            margin-top: 20px;
+            background-color: red;
+            color:white;
+        }
+    </style>
+    <h1>Counter</h1>
+    <h3>{{count}} times</h3>
+
+    <form action="/increase_by_2" method="post">
+        <button>+2</button>
+    </form>
+    
+    <form action="/destroy_session" method="post">
+        <button>Destroy Session</button>
+    </form>
+
+    <form action='/increase_by_user' method="post">
+        <input type="text" name="add" id="add">
+        <button>Add Number</button>
+    </form>
+</body>
+</html>

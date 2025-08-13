@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo survey index</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='result.css')}}">
+</head>
+
+<body>
+    <h1>Submited info</h1>
+    <main>
+        <div class="left">
+            <h2>Name</h2>
+            <h2>Dojo Location</h2>
+            <h2>Favorite Language</h2>
+            <h2>Comment</h2>
+        </div>
+        <div class="rigth">
+            <h2>{{name if name else  "NONE"}}</h2>
+            <h2>{{location}}</h2>
+            <h2>{{language}}</h2>
+            <h2>{{comment if comment else "NONE"}}</h2>
+        </div>
+    </main>
+    <a href="/">
+    <button>Go Back</button>
+    </a>
+</body>
+</html>

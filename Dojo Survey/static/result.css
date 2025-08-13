@@ -1,0 +1,23 @@
+main{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid black;
+    width: 50%;
+    height:420px;
+    margin: auto;
+    padding: 70px;
+}
+h1{
+    position: relative;
+    left: 44%;
+    top: 70px;
+}
+button{
+    position: relative;
+    left: 70%;
+    bottom: 50px;
+    width: 120px;
+    height: 30px;
+    background-color: #76a5af;
+    color: white;
+}

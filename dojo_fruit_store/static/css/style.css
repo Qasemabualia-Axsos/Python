@@ -1,0 +1,62 @@
+main{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 0 60px;
+}
+.left{
+    width: 50%;
+
+}
+table{
+    margin: auto;
+}
+tr,th,td,table{
+    border: 2px solid black;
+    width: 350px;
+    height: 50px;
+}
+table{
+    width: 1000px;
+    font-size: 30px;
+}
+select{
+    width: 50px;
+}
+.left p{
+    font-size: 25px;
+    text-decoration: underline;
+}
+.info{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.info h1{
+    font-size: 20px;
+    text-decoration: underline;
+}
+input{
+    position: relative;
+    top: 40%;
+    margin: 8px 60px 0 0 ;
+    display: grid;
+    border: 3px solid black;
+}
+button{
+    position: relative;
+    left: 34%;
+    background-color: #b6d7a8;
+    width: 100px;
+    height: 30px;
+}
+.right{
+    border: 1px solid black;
+    background-color: rgb(180 167 214);
+    width: 30%;
+    height: 800px;
+    margin-right: 50px;
+}
+.right p{
+    font-size: 32px;
+    padding: 12px;
+}

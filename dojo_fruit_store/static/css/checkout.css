@@ -1,0 +1,46 @@
+body{
+    margin-left: 60px;
+    width: 70%;
+    margin: auto;
+}
+
+tr,th,td,table{
+    border: 2px solid black;
+    width: 350px;
+    height: 50px;
+}
+table{
+    width: 1000px;
+    font-size: 30px;
+}
+select{
+    width: 50px;
+}
+.left p{
+    font-size: 25px;
+    text-decoration: underline;
+}
+.info{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.info h1{
+    font-size: 20px;
+    text-decoration: underline;
+}
+input{
+    position: relative;
+    top: 40%;
+    margin: 8px 60px 0 0 ;
+    display: grid;
+    border: 3px solid black;
+}
+img{
+    width: 50px;
+}
+.left_right{
+    height: 80%;
+    margin-top: 28px;
+    margin-right: 60px;
+}

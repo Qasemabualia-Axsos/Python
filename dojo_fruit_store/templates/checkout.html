@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dojo Fruit Store-Checkout</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='css/checkout.css')}}">
+</head>
+
+<body>
+  <h1>Thank you for your order!</h1>
+  <p>We ordered {{number+number1+number2}} items for {{name}} and changed your <br> student account on {{date}}</p>
+  <h1>You've ordered</h1>
+  <table>
+    <tr>
+      <th>Friut Name</th>
+      <th>Quantity</th>
+    </tr>
+    <tr>
+      <td>Strawberry </td>
+      <td>
+        <p>{{number}}</p>
+        {%for i in range (number)%}
+        <img src="{{ url_for('static', filename='img/strawberry.png') }}" alt="strawberry">
+        {%endfor%}
+      </td>
+    </tr>
+    <tr>
+      <td>Rosebarry</td>
+      <td>
+        <p>{{number1}}</p>
+        {%for i in range (number1)%}
+        <img src="{{ url_for('static', filename='img/raspberry.png') }}" alt="raspberry">
+        {%endfor%}
+      </td>
+    </tr>
+    <tr>
+      <td>Apple</td>
+      <td>
+        <p>{{number2}}</p>
+         {%for i in range (number2)%}
+        <img src="{{ url_for('static', filename='img/apple.png') }}" alt="Apple">
+        {%endfor%}
+      </td>
+    </tr>
+  </table>
+  <div class="info">
+    <div class="left_left">
+      <h1>Your Information</h1>
+      <h3>Name:</h3>
+      <h3>Your Student ID:</h3>
+    </div>
+    <div class="left_right">
+      <p>{{name}}</p>
+      <p>{{id}}</p>
+    </div>
+  </div>
+</body>
+
+</html>

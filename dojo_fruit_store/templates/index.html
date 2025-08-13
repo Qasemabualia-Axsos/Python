@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dojo Fruit Store</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+
+<body>
+  <main>
+    <div class="left">
+      <h1>Dojo Fruit Store!</h1>
+      <p>What would you like to buy?</p>
+      <form action="/checkout" method="post">
+      <table>
+        <tr>
+          <th>Friut Name</th>
+          <th>Quantity</th>
+        </tr>
+        <tr>
+          <td>Strawberry</td>
+          <td>
+            <select name="zero" id="zero">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Rosebarry</td>
+          <td>
+            <select name="one" id="one">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Apple</td>
+          <td>
+            <select name="two" id="two">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <div class="info">
+        <div class="left_left">
+          <h1>Your Information</h1>
+          <h3>Name:</h3>
+          <h3>Your Student ID:</h3>
+        </div>
+        <div class="left_right">
+          <input type="text" name="name" id="name">
+          <input type="text" name="id" id="id">
+        </div>
+      </div>
+      <button>Buy me stuff!</button>
+    </div>
+    <div class="right">
+      <h1>Welcome to Dojo Fruit Store!</h1>
+      <p>Your dojo decided to buy fruits for all the students! please use this app to tell us what you would like to have!Once we get your order ,we'll change yout student account automatically.</p>
+      <p>Dojo Fruit Store is proudly built using Flask</p>
+    </div>
+    </form>
+  </main>
+
+</body>
+
+</html>

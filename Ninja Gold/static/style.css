@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:  wrap;
+    margin: 60px;
+}
+label{
+    font-size: 30px;
+    position: relative;
+    top: 40px;
+    left: 55px;
+}
+span{
+    border: 2px solid black;
+    width: 180px;
+    display: inline-block;
+    text-align: center;
+}
+.row{
+    border: 2px solid black;
+    width: 250px;
+    height: 180px;
+    text-align: center;
+}
+button{
+    background-color: white;
+    box-shadow: 3px 3px black;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: red;
+    color: white;
+}
+.reset{
+    position: relative;
+    left: 50%;
+}
+.activities{
+    border: 2px solid black;
+    width: 95%;
+    margin: auto;
+}
+.act{
+    margin-left: 40px;
+}
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
